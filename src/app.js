@@ -5,14 +5,14 @@
     'ui.router'
   ]);
 
-  app.config(function($stateProvider, $urlRouterProvider) {
+  app.config([ '$stateProvider', '$urlRouterProvider'], function($stateProvider, $urlRouterProvider) {
 
     // Default route
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/');
 
     $stateProvider
       .state('home',{
-        url: '/home',
+        url: '/',
         templateUrl: 'src/home/controllers/home.html'
       })
   });
