@@ -1,9 +1,9 @@
 (function() {
   'use strict';
 
-  var app = angular.module('app', ['ui.router']);
+  angular.module('app', ['ui.router']);
 
-  app.config(function($stateProvider, $urlRouterProvider) {
+  angular.config(function($stateProvider, $urlRouterProvider) {
 
     // Default route
     $urlRouterProvider.otherwise('/');
@@ -14,5 +14,7 @@
         templateUrl: 'src/home/controllers/home.html'
       });
   });
+
+  angular.bootstrap(document, ['app]);
 
 })();
