@@ -13,11 +13,8 @@
     $stateProvider
       .state('home',{
         url: '/',
-        templateUrl: 'src/home/controllers/home.html',
-        controller: function($scope) {
-          $scope.items = {'a', 'b', 'c'};
-        }
-      })
+        templateUrl: 'src/home/controllers/home.html'
+      });
   });
 
 })();
