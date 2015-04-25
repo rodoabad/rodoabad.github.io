@@ -1,0 +1,22 @@
+{
+  "name": "rodoabad.github.io",
+  "version": "0.0.0",
+  "description": "My homepage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodoabad/rodoabad.github.io.git"
+  },
+  "author": "Rodo Abad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodoabad/rodoabad.github.io/issues"
+  },
+  "homepage": "https://github.com/rodoabad/rodoabad.github.io",
+  "devDependencies": {
+    "gulp": "^3.8.11"
+  }
+}
