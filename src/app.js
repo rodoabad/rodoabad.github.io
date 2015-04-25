@@ -13,11 +13,7 @@
     $stateProvider
       .state('home',{
         url: '/home',
-        views: {
-          'appView': {
-            templateUrl: 'src/home/controllers/home.html'
-          }
-        }
+        templateUrl: 'src/home/controllers/home.html'
       })
   });
 
