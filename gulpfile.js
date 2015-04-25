@@ -5,6 +5,7 @@
 var gulp = require('gulp'),
     jshint = require('gulp-jshint');
 
+// Lint *.js files
 gulp.task('lint', function() {
   return gulp.src('src/**/*.js')
       .pipe(jshint())
@@ -12,4 +13,9 @@ gulp.task('lint', function() {
       .pipe(jshint.reporter('fail'));
 });
 
-gulp.task('default', ['lint']);
+// Watch files for changes
+gulp.task('watch', function() {
+  gulp.watch('src/**/*.js', ['lint']);
+});
+
+gulp.task('default', ['lint', 'watch']);
