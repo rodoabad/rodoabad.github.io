@@ -18,6 +18,7 @@
   "homepage": "https://github.com/rodoabad/rodoabad.github.io",
   "devDependencies": {
     "gulp": "^3.8.11",
+    "gulp-connect": "^2.2.0",
     "gulp-jshint": "^1.10.0",
     "jshint-stylish": "^1.0.1"
   }
