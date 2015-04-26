@@ -11,10 +11,12 @@
     $stateProvider
       .state('home',{
         url: '/',
-        templateUrl: 'src/home/controllers/home.html'
+        templateUrl: 'src/home/home.html'
       });
   });
 
-  //angular.bootstrap(document, ['app']);
+  angular.element(document).ready(function() {
+    angular.bootstrap(document, ['app']);
+  });
 
 })();

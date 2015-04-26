@@ -43,7 +43,7 @@
   // Watch files for changes
   gulp.task('watch', function() {
     gulp.watch(dirs.js, ['lint']);
-    gulp.watch(dirs.html, ['html']);
+    gulp.watch([dirs.js, dirs.html], ['html']);
   });
 
   gulp.task('default', ['preview-server', 'lint', 'html', 'watch']);
