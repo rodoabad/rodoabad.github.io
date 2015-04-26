@@ -11,8 +11,19 @@
     js: [
       'gulpfile.js',
       'src/**/*.js'
+    ],
+    html: [
+      'index.html',
+      'src/**/*.html'
     ]
   };
+
+  // Start preview server
+  gulp.task('preview-server', function() {
+    connect.server({
+      livereload: true
+    });
+  });
 
   // Lint *.js files
   gulp.task('lint', function() {
@@ -22,18 +33,19 @@
         .pipe(jshint.reporter('fail'));
   });
 
-  // Start preview server
-  gulp.task('preview-server', function() {
-    connect.server({
-      livereload: true
-    });
+  // Enable live reload on *.html files
+  gulp.task('html', function() {
+    return gulp.src(dirs.html)
+        .pipe(connect.reload());
+
   });
 
   // Watch files for changes
   gulp.task('watch', function() {
     gulp.watch(dirs.js, ['lint']);
+    gulp.watch(dirs.html, ['html']);
   });
 
-  gulp.task('default', ['lint', 'watch']);
+  gulp.task('default', ['preview-server', 'lint', 'html', 'watch']);
 
 })();
