@@ -16,6 +16,7 @@
           </value>
         </option>
         <JSCodeStyleSettings>
+          <option name="ALIGN_MULTILINE_VAR_DECLARATION" value="true" />
           <option name="SPACES_WITHIN_OBJECT_LITERAL_BRACES" value="true" />
         </JSCodeStyleSettings>
         <codeStyleSettings language="JavaScript">
