@@ -4,7 +4,7 @@ describe ( 'HomeController', function () {
 
   var $rootScope,
       $scope,
-      controller;
+      ctrl;
 
   beforeEach ( function () {
 
@@ -20,7 +20,7 @@ describe ( 'HomeController', function () {
 
         $scope = $rootScope.$new ();
 
-        controller = $c ( 'HomeController', {
+        ctrl = $c ( 'HomeController', {
           $rootScope: $rootScope,
           $scope: $scope
         } );
@@ -31,11 +31,11 @@ describe ( 'HomeController', function () {
   } );
 
   it ( 'should have a HomeController controller', function () {
-    controller.should.not.equal ( undefined );
+    ctrl.should.not.equal ( undefined );
   } );
 
   it('should say hello world', function() {
-    $scope.helloWorld.should.equal('Hello world!');
+    ctrl.helloWorld.should.equal('Hello world!');
   });
 
 } );

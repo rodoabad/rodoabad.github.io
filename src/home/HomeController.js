@@ -2,12 +2,15 @@
 
   'use strict';
 
-  function HomeController ( $scope ) {
-    $scope.helloWorld = 'Hello world!';
+  function HomeController () {
+
+    angular.extend(this, {
+      helloWorld: 'Hello world!'
+    });
   }
 
   angular.module ( 'app' )
     .controller ( 'HomeController', [
-    '$scope', HomeController
+    HomeController
   ] );
 }) ();
