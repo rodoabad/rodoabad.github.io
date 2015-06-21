@@ -48,6 +48,6 @@
   } );
 
   //gulp.task ( 'default', [ 'preview-server', 'lint', 'html', 'watch' ] );
-  gulp.task ( 'default', [ 'preview-server', 'lint' ] );
+  gulp.task ( 'default', [ 'lint' ] );
 
 }) ();
