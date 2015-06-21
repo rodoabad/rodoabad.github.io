@@ -47,6 +47,7 @@
     gulp.watch ( [ dirs.js, dirs.html ], [ 'html' ] );
   } );
 
-  gulp.task ( 'default', [ 'preview-server', 'lint', 'html' ] );
+  //gulp.task ( 'default', [ 'preview-server', 'lint', 'html', 'watch' ] );
+  gulp.task ( 'default', [ 'lint' ] );
 
 }) ();
