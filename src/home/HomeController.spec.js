@@ -3,8 +3,8 @@ describe ( 'HomeController', function () {
   'use strict';
 
   var $rootScope,
-      $scope,
-      ctrl;
+    $scope,
+    ctrl;
 
   beforeEach ( function () {
 
@@ -34,8 +34,8 @@ describe ( 'HomeController', function () {
     ctrl.should.not.equal ( undefined );
   } );
 
-  it('should say hello world', function() {
-    ctrl.helloWorld.should.equal('Hello world!');
-  });
+  it ( 'should say hello world', function () {
+    ctrl.helloWorld.should.equal ( 'Hello world!' );
+  } );
 
 } );

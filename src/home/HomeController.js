@@ -4,9 +4,9 @@
 
   function HomeController () {
 
-    angular.extend(this, {
+    angular.extend ( this, {
       helloWorld: 'Hello world!'
-    });
+    } );
   }
 
   angular.module ( 'app' )
